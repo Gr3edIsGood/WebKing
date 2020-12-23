@@ -1,0 +1,211 @@
+
+body{
+  font-weight: 500;
+  color: black;
+
+}
+/*			Container
+_________________________________*/
+.header__container{
+  width: 100%;
+  max-width: 91.875em;
+  margin:0 auto;
+  padding:0 1.5rem;
+}
+.main__container{
+  width: 100%;
+  max-width: 76.875em;
+  margin:0 auto;
+  padding:0 1.5rem;
+}
+/*			Header
+_________________________________*/
+.header{
+  color: black;
+  background-color: #ffffff;
+  font-family: Calibri;
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:34px 0 33px;
+    .header__logo{
+      display: flex;
+      align-items: center;
+      .header__logo--text{
+        font-family: Calibri;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.75rem;
+        line-height: 80%;
+        color: #3880F4;
+        max-width: 9.5rem;
+        margin-left: 1rem;
+      }
+    }
+    .header__nav{
+      display: flex;
+      align-items: center;
+      .header__nav--list{
+        display: flex;
+        .header__nav--item{
+          margin-right: 3.6rem;
+          position: relative;
+          a{
+            font-family: Calibri;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 90%;
+            text-transform: uppercase;
+            color: #000000;
+          }
+          &:hover{
+            a{
+              color: #3880F4;
+            }
+            &:before{
+              display: block;
+            }
+          }
+          &:before{
+            display: none;
+            content:"";
+            background-color: #ffffff;
+            width: 34px;
+            height: 6px;
+            position: absolute;
+            top: -13px;
+            left: 0;
+            border: 6px solid #99F2DC;
+            border-right: 6px solid #ffffff;
+            border-bottom: 0px;
+          }
+        }
+      }
+    }
+    .header__buttons{
+      margin-left: 35px;
+      button {
+        font-family: Calibri;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 90%;
+
+        color: #3880F4;
+        background-color: transparent;
+        border: 1px solid #3880F4;
+        border-radius: 1px;
+        outline: none;
+        padding: 1.2rem 1.5rem;
+        &:hover {
+          color: #08B3F7;
+          border: 1px solid #08B3F7;
+        }
+
+        &:last-child {
+          color: #ffffff;
+          background-color: #3880F4;
+          margin-left: 10px;
+
+          &:hover {
+            background-color: #08B3F7;
+            border: 1px solid #08B3F7;
+            color: #ffffff;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+/*			Posts
+_________________________________*/
+.intro{
+  background: -webkit-linear-gradient(45deg, rgb(61, 133, 235) 72%, rgb(197, 232, 248));
+  background: -moz-linear-gradient(45deg, rgb(61, 133, 235) 72%, rgb(197, 232, 248));
+  background: linear-gradient(45deg, rgb(61, 133, 235) 72%, rgb(197, 232, 248));
+  height: 100vh;
+  .intro__content{
+    padding: 12.8rem 0 9.2rem;
+    position: relative;
+    .intro__title{
+      .intro__title--time{
+        font-family: Calibri;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3.2rem;
+        line-height: 100%;
+
+        color: #FFFFFF;
+      }
+      .intro__title--tagline{
+        font-family: Calibri;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 6rem;
+        line-height: 100%;
+        color: #000000;
+        position: relative;
+        max-width: 61rem;
+        z-index: 1;
+        div{
+          &:first-child{
+            background: url("../images/tagline__bg-1.png") no-repeat;
+          }
+          &:nth-child(2){
+            background: url("../images/tagline__bg-2.png") no-repeat;
+          }
+          .cloud__notice{
+            background: none;
+          }
+        }
+
+        .intro__notice{
+          z-index: -1;
+          position: absolute;
+          font-family: Calibri;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 1.6rem;
+          line-height: 100%;
+          top:-20px;
+          right: 100px;
+          color: #000000;
+        }
+      }
+      .intro__title--info{
+        font-family: Calibri;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 140%;
+
+        color: #FFFFFF;
+      }
+    }
+    .intro__logo{
+      position: absolute;
+      top:5rem;
+      right: -120px;
+    }
+  }
+}
+/*			Features
+_________________________________*/
+
+
+
+
+
+/*			Speakers
+_________________________________*/
+
+
+/*			Media
+_________________________________*/
+@media screen and (max-width: 321px){
+
+}
